@@ -1,5 +1,6 @@
 import React from "react";
 import style from './recipe.css';
+
 import Stack from 'react-bootstrap/Stack';
   
 const Recipe = ({title,calories,image,ingredients}) =>{
@@ -9,8 +10,8 @@ const Recipe = ({title,calories,image,ingredients}) =>{
         <div className={style.recipe}>
             <img className={style.image} src={image} alt=""/>
             <div className="container">
-            <h2>{title}</h2>
-            <ol>
+            <h2 style={{color : " rgb(255, 115, 0) "}}>{title}</h2>
+            <ol style={{color : "  rgb(19, 255, 19)"}}>
                 {ingredients.map(ingredient=>(
                     <li>{ingredient.text}</li>
                 ))}
